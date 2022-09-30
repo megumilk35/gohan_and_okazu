@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+html {
+	overflow-y: scroll;
+}
+body {
+	color: #43341B;
+}
+p {
+	font-size: 130%;
+	letter-spacing: 0.3rem;
+}
+a {
+	color: #43341B;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+#wrapper {
+	background: url(../images/bg.png) #F2EEE2;
+	max-width: 1200px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+/* header---------------------------------------- */
+header {
+	margin-bottom: 100px;
+	position: relative;
+}
+nav {
+	width: 90%;
+	position: absolute;
+	display: flex;
+	align-items: flex-start;
+	margin: 30px 5%;
+}
+nav ul{
+	margin-left: auto;
+	writing-mode: vertical-rl;
+	font-size: 125%;
+	letter-spacing: 0.5rem;
+}
+nav ul li {
+	padding: 0 20px;
+	border-right: 2px solid #F2EEE2;
+}
+nav ul li a {
+	color: #F2EEE2;
+	position: relative;
+	transition: 0.3s;
+}
+nav ul li a:hover {
+	opacity: 0.5;
+	text-shadow: 0 0 2px #000;
+}
+/* 下層ページ用 */
+#concept h2,#menu h2,#news h2,#shop h2,#contact h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #F2EEE2;
+	font-size: 300%;
+}
+/* main-------------------------------------------- */
+section {
+	margin-bottom: 150px;
+}
+/* footer------------------------------------------ */
+footer {
+	display: flex;
+	flex-direction: column;
+	row-gap: 45px;
+	background: #0F2540;
+	text-align: center;
+	color: #F2EEE2;
+	letter-spacing: 0.3rem;
+}
+footer p img {
+	margin: 60px 0 30px;
+}
+footer p:nth-child(2) {
+	font-size: 143%;
+}
+footer p:last-child {
+	font-size: 110%;
+	margin-bottom: 30px;
+}
+footer dl {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+footer dl dt {
+	font-size: 130%;
+}
+footer ul {
+	display: flex;
+	justify-content: center;
+	column-gap: 40px;
+}
+footer ul li {
+	padding-left: 40px;
+}
+footer ul li+li {
+	border-left: 2px solid #F2EEE2;
+}
+footer ul li a {
+	color: #F2EEE2;
+	font-size: 125%;
+	font-weight: bold;
+	transition: 0.3s;
+}
+footer ul li a:hover {
+	border-bottom: 2px solid #F2EEE2;
+	padding-bottom: 4px;
+}
+/* カレント設定---------------------------------------- */
+/* header */
+#top header .c_top a,
+#concept header .c_concept a,
+#menu header .c_menu a,
+#news header .c_news a,
+#shop header .c_shop a,
+#contact header .c_contact a {
+	opacity: 0.6;
+	text-shadow: 1px 1px 2px #000;
+}
+/* footer */
+#top footer .c_top a,
+#concept footer .c_concept a,
+#menu footer .c_menu a,
+#news footer .c_news a,
+#shop footer .c_shop a,
+#contact footer .c_contact a {
+	border-bottom: 2px solid #F2EEE2;
+	padding-bottom: 4px;
+}

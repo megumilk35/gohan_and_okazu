@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+section {
+	text-align: center;
+	margin: 0 100px 150px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+h3 {
+	font-size: 180%;
+	text-align: left;
+	letter-spacing: 0.3rem;
+	margin-left: 30px;
+	margin-bottom: 60px;
+}
+section div {
+	display: flex;
+	border-bottom: 1px solid #382B17;
+	padding-bottom: 30px;
+}
+section div p {
+	width: 35.3%;
+	align-self: center;
+}
+section div dl {
+	width: calc(64.7% - 60px);
+	font-size: 130%;
+	text-align: left;
+	letter-spacing: 0.2rem;
+	margin: 0 30px;
+}
+section div dl dt {
+	margin-bottom: 30px;
+}
+section div dl dd {
+	line-height: 1.5;
+	/* font-weight: bold; */
+}
